@@ -716,38 +716,39 @@ function buildGroupMatches(){
   });
   return matches;
 }
+
 const KO_MATCHES = [
-  {id:'ko_r32_1',  phase:'Dieciseisavos', home:'Sudáfrica', away:'Canadá', date:'Dom 28 Jun', time:'16:00', venue:'SoFi Stadium, Los Angeles'},
-  {id:'ko_r32_2',  phase:'Dieciseisavos', home:'1° Grupo C', away:'2° Grupo B', date:'Lun 30 Jun', time:'21:00', venue:'Gillette, Boston'},
-  {id:'ko_r32_3',  phase:'Dieciseisavos', home:'1° Grupo B', away:'3° E/F/G/I/J', date:'Mar 1 Jul', time:'18:00', venue:'BMO Field, Toronto'},
-  {id:'ko_r32_4',  phase:'Dieciseisavos', home:'1° Grupo D', away:'3° B/E/F/I/J', date:'Mar 1 Jul', time:'21:00', venue:'SoFi, Inglewood'},
-  {id:'ko_r32_5',  phase:'Dieciseisavos', home:'2° Grupo A', away:'2° Grupo C', date:'Mié 2 Jul', time:'18:00', venue:'Mercedes-Benz, Atlanta'},
-  {id:'ko_r32_6',  phase:'Dieciseisavos', home:'1° Grupo F', away:'2° Grupo E', date:'Mié 2 Jul', time:'21:00', venue:'SoFi, Inglewood'},
-  {id:'ko_r32_7',  phase:'Dieciseisavos', home:'1° Grupo E', away:'2° Grupo F', date:'Jue 3 Jul', time:'18:00', venue:'Hard Rock, Miami'},
-  {id:'ko_r32_8',  phase:'Dieciseisavos', home:'2° Grupo D', away:'2° Grupo G', date:'Jue 3 Jul', time:'21:00', venue:'Lumen Field, Seattle'},
-  {id:'ko_r32_9',  phase:'Dieciseisavos', home:'1° Grupo I', away:'3° C/D/F/G/H', date:'Vie 4 Jul', time:'18:00', venue:'MetLife, New Jersey'},
-  {id:'ko_r32_10', phase:'Dieciseisavos', home:'1° Grupo G', away:'3° A/E/I/H/J', date:'Vie 4 Jul', time:'21:00', venue:'Arrowhead, Kansas City'},
-  {id:'ko_r32_11', phase:'Dieciseisavos', home:'1° Grupo H', away:'2° Grupo J', date:'Sáb 5 Jul', time:'18:00', venue:'NRG, Houston'},
-  {id:'ko_r32_12', phase:'Dieciseisavos', home:'2° Grupo I', away:'2° Grupo K', date:'Sáb 5 Jul', time:'21:00', venue:'AT&T, Arlington'},
-  {id:'ko_r32_13', phase:'Dieciseisavos', home:'1° Grupo J', away:'2° Grupo H', date:'Dom 6 Jul', time:'18:00', venue:'Hard Rock, Miami'},
-  {id:'ko_r32_14', phase:'Dieciseisavos', home:'1° Grupo L', away:'3° E/H/I/J/K', date:'Dom 6 Jul', time:'21:00', venue:'Lumen Field, Seattle'},
-  {id:'ko_r32_15', phase:'Dieciseisavos', home:'2° Grupo L', away:'2° Grupo K', date:'Lun 7 Jul', time:'18:00', venue:'Lincoln, Filadelfia'},
-  {id:'ko_r32_16', phase:'Dieciseisavos', home:'1° Grupo K', away:'3° D/E/I/J/L', date:'Lun 7 Jul', time:'21:00', venue:'SoFi, Inglewood'},
+  // ⚠️ Cruces basados en clasificación al 28/6. Los marcados "PROVISORIO" dependen de grupos aún abiertos o de la tabla de mejores terceros y pueden cambiar antes del partido.
+  {id:'ko_r32_1',  partido:73, phase:'Dieciseisavos', home:'Sudáfrica', away:'Canadá', date:'Dom 28 Jun', time:'16:00', venue:'SoFi Stadium, Los Ángeles'},
+  {id:'ko_r32_2',  partido:74, phase:'Dieciseisavos', home:'Alemania', away:'Paraguay', date:'Lun 29 Jun', time:'17:30', venue:'Gillette Stadium, Boston'}, // PROVISORIO (Paraguay = mejor 3°)
+  {id:'ko_r32_3',  partido:75, phase:'Dieciseisavos', home:'Países Bajos', away:'Marruecos', date:'Lun 29 Jun', time:'22:00', venue:'Estadio Monterrey'},
+  {id:'ko_r32_4',  partido:76, phase:'Dieciseisavos', home:'Brasil', away:'Japón', date:'Lun 29 Jun', time:'14:00', venue:'NRG Stadium, Houston'},
+  {id:'ko_r32_5',  partido:77, phase:'Dieciseisavos', home:'Francia', away:'Suecia', date:'Mar 30 Jun', time:'18:00', venue:'MetLife Stadium, Nueva York/Nueva Jersey'},
+  {id:'ko_r32_6',  partido:78, phase:'Dieciseisavos', home:'Costa de Marfil', away:'Noruega', date:'Mar 30 Jun', time:'14:00', venue:'AT&T Stadium, Dallas'},
+  {id:'ko_r32_7',  partido:79, phase:'Dieciseisavos', home:'México', away:'Ecuador', date:'Mar 30 Jun', time:'22:00', venue:'Estadio Azteca, Cdad. México'},
+  {id:'ko_r32_8',  partido:80, phase:'Dieciseisavos', home:'Inglaterra', away:'RD Congo', date:'Mié 1 Jul', time:'13:00', venue:'Mercedes-Benz Stadium, Atlanta'},
+  {id:'ko_r32_9',  partido:81, phase:'Dieciseisavos', home:'Estados Unidos', away:'Bosnia y Herzegovina', date:'Mié 1 Jul', time:'21:00', venue:"Levi's Stadium, Bahía de San Francisco"},
+  {id:'ko_r32_10', partido:82, phase:'Dieciseisavos', home:'Bélgica', away:'Senegal', date:'Mié 1 Jul', time:'17:00', venue:'Lumen Field, Seattle'}, // PROVISORIO (Bélgica/Senegal cruce sensible a terceros)
+  {id:'ko_r32_11', partido:83, phase:'Dieciseisavos', home:'Portugal', away:'Croacia', date:'Jue 2 Jul', time:'20:00', venue:'BMO Field, Toronto'}, // PROVISORIO (Croacia = mejor 3°)
+  {id:'ko_r32_12', partido:84, phase:'Dieciseisavos', home:'España', away:'Austria', date:'Jue 2 Jul', time:'16:00', venue:'Sede a confirmar'},
+  {id:'ko_r32_13', partido:85, phase:'Dieciseisavos', home:'Suiza', away:'Argelia', date:'Vie 3 Jul', time:'00:00', venue:'Sede a confirmar'}, // PROVISORIO (Argelia = mejor 3°)
+  {id:'ko_r32_14', partido:86, phase:'Dieciseisavos', home:'Argentina', away:'Cabo Verde', date:'Vie 3 Jul', time:'19:00', venue:'Hard Rock Stadium, Miami'}, // PROVISORIO (Cabo Verde = mejor 3°)
+  {id:'ko_r32_15', partido:87, phase:'Dieciseisavos', home:'Colombia', away:'Ghana', date:'Vie 3 Jul', time:'19:30', venue:'Arrowhead Stadium, Kansas City'},
+  {id:'ko_r32_16', partido:88, phase:'Dieciseisavos', home:'Australia', away:'Egipto', date:'Vie 3 Jul', time:'15:00', venue:'Sede a confirmar'},
 
+  {id:'ko_r16_1', partido:89, phase:'Octavos de Final', home:'G. Partido 74', away:'G. Partido 77', date:'Mié 9 Jul', time:'18:00', venue:'MetLife, New Jersey'},
+  {id:'ko_r16_2', partido:90, phase:'Octavos de Final', home:'G. Partido 73', away:'G. Partido 75', date:'Mié 9 Jul', time:'21:00', venue:'SoFi, Inglewood'},
+  {id:'ko_r16_3', partido:91, phase:'Octavos de Final', home:'G. Partido 76', away:'G. Partido 78', date:'Jue 10 Jul', time:'21:00', venue:'AT&T, Arlington'},
+  {id:'ko_r16_4', partido:92, phase:'Octavos de Final', home:'G. Partido 79', away:'G. Partido 80', date:'Jue 10 Jul', time:'18:00', venue:'SoFi, Inglewood'},
+  {id:'ko_r16_5', partido:93, phase:'Octavos de Final', home:'G. Partido 83', away:'G. Partido 84', date:'Vie 11 Jul', time:'21:00', venue:'Arrowhead, Kansas City'},
+  {id:'ko_r16_6', partido:94, phase:'Octavos de Final', home:'G. Partido 81', away:'G. Partido 82', date:'Vie 11 Jul', time:'18:00', venue:'AT&T, Arlington'},
+  {id:'ko_r16_7', partido:95, phase:'Octavos de Final', home:'G. Partido 86', away:'G. Partido 88', date:'Sáb 12 Jul', time:'21:00', venue:'MetLife, New Jersey'},
+  {id:'ko_r16_8', partido:96, phase:'Octavos de Final', home:'G. Partido 85', away:'G. Partido 87', date:'Sáb 12 Jul', time:'18:00', venue:'Hard Rock, Miami'},
 
-  {id:'ko_r16_1', phase:'Octavos de Final', home:'G. Partido 74', away:'G. Partido 77', date:'Mié 9 Jul', time:'18:00', venue:'MetLife, New Jersey'},
-  {id:'ko_r16_2', phase:'Octavos de Final', home:'G. Partido 73', away:'G. Partido 75', date:'Mié 9 Jul', time:'21:00', venue:'SoFi, Inglewood'},
-  {id:'ko_r16_3', phase:'Octavos de Final', home:'G. Partido 76', away:'G. Partido 78', date:'Jue 10 Jul', time:'21:00', venue:'AT&T, Arlington'},
-  {id:'ko_r16_4', phase:'Octavos de Final', home:'G. Partido 79', away:'G. Partido 80', date:'Jue 10 Jul', time:'18:00', venue:'SoFi, Inglewood'},
-  {id:'ko_r16_5', phase:'Octavos de Final', home:'G. Partido 83', away:'G. Partido 84', date:'Vie 11 Jul', time:'21:00', venue:'Arrowhead, Kansas City'},
-  {id:'ko_r16_6', phase:'Octavos de Final', home:'G. Partido 81', away:'G. Partido 82', date:'Vie 11 Jul', time:'18:00', venue:'AT&T, Arlington'},
-  {id:'ko_r16_7', phase:'Octavos de Final', home:'G. Partido 86', away:'G. Partido 88', date:'Sáb 12 Jul', time:'21:00', venue:'MetLife, New Jersey'},
-  {id:'ko_r16_8', phase:'Octavos de Final', home:'G. Partido 85', away:'G. Partido 87', date:'Sáb 12 Jul', time:'18:00', venue:'Hard Rock, Miami'},
-
-  {id:'ko_qf_1', phase:'Cuartos de Final', home:'G. Octavos 89', away:'G. Octavos 90', date:'Mar 15 Jul', time:'21:00', venue:'SoFi, Inglewood'},
-  {id:'ko_qf_2', phase:'Cuartos de Final', home:'G. Octavos 93', away:'G. Octavos 94', date:'Mar 15 Jul', time:'18:00', venue:'AT&T, Arlington'},
-  {id:'ko_qf_3', phase:'Cuartos de Final', home:'G. Octavos 91', away:'G. Octavos 92', date:'Mié 16 Jul', time:'21:00', venue:'MetLife, New Jersey'},
-  {id:'ko_qf_4', phase:'Cuartos de Final', home:'G. Octavos 95', away:'G. Octavos 96', date:'Mié 16 Jul', time:'18:00', venue:'Hard Rock, Miami'},
+  {id:'ko_qf_1', partido:97, phase:'Cuartos de Final', home:'G. Octavos 89', away:'G. Octavos 90', date:'Mar 15 Jul', time:'21:00', venue:'SoFi, Inglewood'},
+  {id:'ko_qf_2', partido:98, phase:'Cuartos de Final', home:'G. Octavos 93', away:'G. Octavos 94', date:'Mar 15 Jul', time:'18:00', venue:'AT&T, Arlington'},
+  {id:'ko_qf_3', partido:99, phase:'Cuartos de Final', home:'G. Octavos 91', away:'G. Octavos 92', date:'Mié 16 Jul', time:'21:00', venue:'MetLife, New Jersey'},
+  {id:'ko_qf_4', partido:100, phase:'Cuartos de Final', home:'G. Octavos 95', away:'G. Octavos 96', date:'Mié 16 Jul', time:'18:00', venue:'Hard Rock, Miami'},
 
   {id:'ko_sf_1', phase:'Semifinal', home:'G. Cuartos 97', away:'G. Cuartos 98', date:'Sáb 19 Jul', time:'21:00', venue:'AT&T, Arlington'},
   {id:'ko_sf_2', phase:'Semifinal', home:'G. Cuartos 99', away:'G. Cuartos 100', date:'Dom 20 Jul', time:'21:00', venue:'MetLife, New Jersey'},
@@ -758,6 +759,53 @@ const KO_MATCHES = [
 
 const ALL_MATCHES = [...buildGroupMatches(), ...KO_MATCHES];
 const PHASES = ['Todas','Fase de Grupos','Dieciseisavos','Octavos de Final','Cuartos de Final','Semifinal','Tercer Puesto','Final'];
+
+// ── Resolución automática de cruces de la fase eliminatoria ──
+function getKoByPartido(n){ return KO_MATCHES.find(m => m.partido === n); }
+
+function getWinnerLoser(matchId){
+  const m = ALL_MATCHES.find(x => x.id === matchId);
+  if(!m) return {winner:null, loser:null};
+  const homeName = matchHome(m);
+  const awayName = matchAway(m);
+  const res = db && db.results && db.results[matchId];
+  if(!res || res.home === '' || res.home === undefined || res.away === '' || res.away === undefined){
+    return {winner:null, loser:null};
+  }
+  const h = Number(res.home), a = Number(res.away);
+  if(h === a){
+    const side = db && db.koWinners && db.koWinners[matchId];
+    if(side === 'home') return {winner:homeName, loser:awayName};
+    if(side === 'away') return {winner:awayName, loser:homeName};
+    return {winner:null, loser:null}; // empate sin definir por penales todavía
+  }
+  return h > a ? {winner:homeName, loser:awayName} : {winner:awayName, loser:homeName};
+}
+
+function resolveKoLabel(label){
+  if(!label || typeof label !== 'string') return label;
+  let m;
+  if((m = label.match(/^Ganador\s+SF(\d)$/i))){
+    return getWinnerLoser('ko_sf_' + m[1]).winner || label;
+  }
+  if((m = label.match(/^Perdedor\s+SF(\d)$/i))){
+    return getWinnerLoser('ko_sf_' + m[1]).loser || label;
+  }
+  if((m = label.match(/(\d+)\s*$/))){
+    const target = getKoByPartido(parseInt(m[1], 10));
+    if(target) return getWinnerLoser(target.id).winner || label;
+  }
+  return label;
+}
+
+function matchHome(m){
+  const raw = (db && db.koTeams && db.koTeams[m.id] && db.koTeams[m.id].home) || m.homeTeam || m.home;
+  return resolveKoLabel(raw);
+}
+function matchAway(m){
+  const raw = (db && db.koTeams && db.koTeams[m.id] && db.koTeams[m.id].away) || m.awayTeam || m.away;
+  return resolveKoLabel(raw);
+}
 
 /* =========================================================
    VARIABLES GLOBALES
@@ -884,6 +932,8 @@ function defaultDB(){
     results: {},
     predictions: {},
     groups: [],
+    koTeams: {},
+    koWinners: {},
     config: {exact:3, partial:1, koBonus:1}
   };
 }
@@ -897,6 +947,8 @@ function normalizeDB(raw){
     if(!parsed.groups) parsed.groups = [];
     if(!parsed.results) parsed.results = {};
     if(!parsed.predictions) parsed.predictions = {};
+    if(!parsed.koTeams) parsed.koTeams = {};
+    if(!parsed.koWinners) parsed.koWinners = {};
     if(!parsed.users || !Array.isArray(parsed.users) || parsed.users.length === 0) {
       parsed.users = defaultDB().users;
     }
@@ -1230,7 +1282,7 @@ function renderHome(){
   } else {
     upWrap.innerHTML = upcoming.map(m=>`
       <div class="group-row">
-        <span>${m.home} vs ${m.away}</span>
+        <span>${matchHome(m)} vs ${matchAway(m)}</span>
         <span class="tag">${m.phase}${m.group?(' · Grupo '+m.group):''}</span>
       </div>`).join('');
   }
@@ -1275,13 +1327,13 @@ function renderPredict(){
         <div class="match">
           <div class="match-meta"><span>${m.group?('Grupo '+m.group):m.phase}${m.date?` · 🗓️ ${m.date} ${m.time}hs · 📍 ${m.venue}`:''}</span>${locked?`<span class="real-result">Resultado real: ${real.home} - ${real.away}</span>`:''}</div>
           <div class="match-teams">
-            <div class="team">${m.home}</div>
+            <div class="team">${matchHome(m)}</div>
             <div class="score-inputs">
               <input type="number" min="0" max="20" data-match="${m.id}" data-side="home" value="${pred.home}" ${locked?'disabled':''} onchange="savePrediction('${m.id}')">
               <span class="vs-sep">:</span>
               <input type="number" min="0" max="20" data-match="${m.id}" data-side="away" value="${pred.away}" ${locked?'disabled':''} onchange="savePrediction('${m.id}')">
             </div>
-            <div class="team right">${m.away}</div>
+            <div class="team right">${matchAway(m)}</div>
           </div>
           ${pts!==null ? `<span class="points-pill ${pts>=db.config.exact?'pts-3':pts>0?'pts-1':'pts-0'}">${pts} pts</span>` : ''}
         </div>`;
@@ -1566,24 +1618,53 @@ async function saveConfig(){
 function renderAdminMatches(){
   const phase = document.getElementById('adminPhaseFilter').value;
   const matches = ALL_MATCHES.filter(m=>m.phase===phase);
+  const isKO = phase !== 'Fase de Grupos';
   let html = '';
   matches.forEach(m=>{
     const real = db.results[m.id] || {home:'', away:''};
+    const ko = (db.koTeams && db.koTeams[m.id]) || {home:'', away:''};
+    const winSide = (db.koWinners && db.koWinners[m.id]) || '';
+    const isTied = real.home !== '' && real.away !== '' && Number(real.home) === Number(real.away);
     html += `
       <div class="match">
         <div class="match-meta"><span>${m.group?('Grupo '+m.group):m.phase}${m.date?` · 🗓️ ${m.date} ${m.time}hs · 📍 ${m.venue}`:''}</span></div>
+        ${isKO ? `
+        <div class="match-teams" style="margin-bottom:6px;">
+          <input type="text" placeholder="${m.home}" data-koteam="${m.id}" data-koside="home" value="${ko.home}" onchange="saveKoTeam('${m.id}','home')" style="flex:1; min-width:0; padding:8px 10px; border-radius:8px; border:1px solid var(--border); background:var(--card-2); color:var(--text); font-size:.85rem; font-weight:700;">
+          <span class="vs-sep" style="opacity:.5;">vs</span>
+          <input type="text" placeholder="${m.away}" data-koteam="${m.id}" data-koside="away" value="${ko.away}" onchange="saveKoTeam('${m.id}','away')" style="flex:1; min-width:0; padding:8px 10px; border-radius:8px; border:1px solid var(--border); background:var(--card-2); color:var(--text); font-size:.85rem; font-weight:700; text-align:right;">
+        </div>` : ''}
         <div class="match-teams">
-          <div class="team">${m.home}</div>
+          <div class="team">${matchHome(m)}</div>
           <div class="score-inputs">
             <input type="number" min="0" max="20" data-rmatch="${m.id}" data-rside="home" value="${real.home}" onchange="saveResult('${m.id}')">
             <span class="vs-sep">:</span>
             <input type="number" min="0" max="20" data-rmatch="${m.id}" data-rside="away" value="${real.away}" onchange="saveResult('${m.id}')">
           </div>
-          <div class="team right">${m.away}</div>
+          <div class="team right">${matchAway(m)}</div>
         </div>
+        ${isKO ? `
+        <div style="display:flex; align-items:center; gap:8px; margin-top:8px; font-size:.75rem;">
+          <span style="opacity:.7;">🥅 Ganador por penales ${isTied ? '(¡hay empate, definí acá!)' : '(solo si hay empate)'}:</span>
+          <select data-kowin="${m.id}" onchange="saveKoWinner('${m.id}')" style="padding:6px 8px; border-radius:8px; border:1px solid var(--border); background:var(--card-2); color:var(--text); font-size:.75rem;">
+            <option value="">—</option>
+            <option value="home" ${winSide==='home'?'selected':''}>${matchHome(m)}</option>
+            <option value="away" ${winSide==='away'?'selected':''}>${matchAway(m)}</option>
+          </select>
+        </div>` : ''}
       </div>`;
   });
   document.getElementById('adminMatchesContent').innerHTML = html;
+}
+
+async function saveKoWinner(matchId){
+  const sel = document.querySelector(`select[data-kowin="${matchId}"]`);
+  const val = sel.value;
+  if(!db.koWinners) db.koWinners = {};
+  if(val){ db.koWinners[matchId] = val; } else { delete db.koWinners[matchId]; }
+  saveDB(db, true);
+  renderAdminMatches();
+  toast('Ganador por penales actualizado ✅');
 }
 
 async function saveResult(matchId){
@@ -1596,6 +1677,16 @@ async function saveResult(matchId){
   }
   saveDB(db, true);
   toast('Resultado actualizado ✅');
+}
+
+async function saveKoTeam(matchId, side){
+  const input = document.querySelector(`input[data-koteam="${matchId}"][data-koside="${side}"]`);
+  const val = input.value.trim();
+  if(!db.koTeams[matchId]) db.koTeams[matchId] = {home:'', away:''};
+  db.koTeams[matchId][side] = val;
+  if(!db.koTeams[matchId].home && !db.koTeams[matchId].away) delete db.koTeams[matchId];
+  saveDB(db, true);
+  toast('País actualizado ✅');
 }
 
 function renderAdminUsers(){
